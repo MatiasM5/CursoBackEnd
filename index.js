@@ -1,3 +1,4 @@
+
 class Usuario {
     constructor(nombre, apellido, libros, mascota) {
       this.nombre = nombre;
@@ -33,12 +34,10 @@ class Usuario {
       autor: "Miguel de Cervantes",
     },
   ];
-  
   let user = new Usuario ("Matias", "Moya", libros, mascota);
   
   user.addPet("gato"); 
   user.addBook("Poder sin limites", "Tony Robbins"); 
-  
   
   console.log(user);
   console.log(`Cantidad de mascotas: ${user.countPets()}`) 
