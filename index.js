@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-class Container {
+export class Container {
   constructor(file) {
     this.file = file;
   }
@@ -39,7 +39,6 @@ class Container {
         return idFound;
 
       } else {
-
         console.log("No se ha encontrado el producto");
         return null;
       }
@@ -84,7 +83,7 @@ class Container {
       }
 
     } catch (error) {
-      console.log(`Error deleteById: ${error}`)
+      console.log(`Error en deleteById: ${error}`)
     }
   }
 
